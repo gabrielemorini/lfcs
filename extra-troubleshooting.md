@@ -1,5 +1,10 @@
+## Extra Troubleshooting
+
+<hr>
+
 <details>
 <summary><strong>What is firmware?</strong></summary>
+  <br>
 <strong>Firmware</strong> is a special class of software that is stored on non-volatile memory (such as ROM, flash memory, or EEPROM) on a hardware device.<br>
 It provides the low-level instructions that allow hardware to start up, operate, and communicate with higher-level software (like the operating system).
 
@@ -14,6 +19,7 @@ Unlike normal software, firmware is tightly coupled to the hardware and usually 
 
 <details>
 <summary><strong>What are BIOS and UEFI?</strong></summary>
+  <br>
 <ul>
 <li><strong>BIOS: Basic Input/Output System</strong> - Legacy firmware interface that initializes hardware and boots the system.</li>
 <li><strong>UEFI: Unified Extended Firmware Interface</strong> - Modern replacement for BIOS with support for larger disks, secure boot, and a more flexible pre-boot environment.</li>
@@ -22,22 +28,27 @@ Unlike normal software, firmware is tightly coupled to the hardware and usually 
 
 <details>
 <summary><strong>What is a bootloader?</strong></summary>
+  <br>
 A <strong>bootloader</strong> is software that loads the operating system kernel into memory and starts it after the firmware (BIOS/UEFI) has done hardware initialization.
 </details>
 
 <details>
 <summary><strong>What is GRUB2? What is its configuration file?</strong></summary>
+  <br>
 <strong>GRUB2 (GRand Unified Bootloader v2):</strong> A modern bootloader used by most Linux distributions.<br>
 Main configuration file: /etc/default/grub (after editing, regenerate with grub2-mkconfig).
 </details>
 
 <details>
 <summary><strong>What is chroot?</strong></summary>
+  <br>
 <strong>chroot</strong> changes the apparent root directory for a running process, isolating it in a limited portion of the filesystem (often used for recovery or testing).
 </details>
 
 <details>
 <summary><strong>Can you describe the key steps a system goes through from the moment it powers on to when the login screen appears?</strong></summary>
+  <br>
+  
 The following steps summarize how the boot procedure happens on Linux:
 
 <ol>
@@ -69,6 +80,8 @@ Systemd looks for the <strong>default target</strong> to execute and runs all of
 
 <details>
 <summary><strong>Can you list and explain the main troubleshooting scenarios you might face during the Linux boot process—such as issues with GRUB2, initramfs, filesystems, kernel panic, or login failure—and describe how you would resolve them using tools like rescue.target, emergency.target, or dracut?</strong></summary>
+
+<br>
 
 <strong>1. Corrupted or missing initramfs</strong><br>
 Typical causes: interrupted kernel updates, full /boot partition, misconfigured kernel version.
