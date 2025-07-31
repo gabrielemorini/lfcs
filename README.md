@@ -16,7 +16,7 @@ Since the LFCS targets **beginner-level system administrators**, I've also inclu
 - [3 - Users and Groups](./3-users-and-groups.md)
 - [4 - Networking](./4-networking.md)
 - [5 - Storage](./5-storage.md)
-- [Extra ]()
+- [Extra - Troubleshooting ](./extra-troubleshooting.md)
 
 <hr>
 
