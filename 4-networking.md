@@ -142,6 +142,8 @@ traceroute 8.8.8.8
 ```
 </details>
 
+---
+
 <details>
 <summary><strong>Why use bridge mode?</strong></summary>
 
@@ -308,6 +310,8 @@ sysctl -p /etc/sysctl.d/net_ipv_.ip_forward.conf
 sysctl -a | grep ip_forward
 ```
 </details>
+
+---
 
 <details>
 <summary><strong>What is iptables and what problem does it solve?</strong></summary>
@@ -639,6 +643,8 @@ iptables -A OUTPUT -p tcp --dport 21 -j DROP
 ```
 </details>
 
+---
+
 <details>
 <summary><strong>What is a reverse proxy?</strong></summary>
 
@@ -769,4 +775,5 @@ ssh-copy-id user@192.168.1.x
 vi /etc/ssh/ssh_config
 PasswordAuthentication no
 ```
+
 </details>
