@@ -526,7 +526,7 @@ cat test.txt
 </details>
 
 <details>
-<summary><strong>View and edit the current user's crontab. Create a cron job that runs date and save the output in cront.txt. The cron runs every five minutes, every day.</strong></summary>
+<summary><strong>View and edit the current user's crontab. Create a cron job that runs date and save the output in cron.txt. The cron runs every five minutes, every day.</strong></summary>
 
 ```bash
 crontab -l -u user  
@@ -973,3 +973,4 @@ docker run -d -p 8080:80 --name myserver custom-nginx:1.0
 ```
 
 </details>
+
