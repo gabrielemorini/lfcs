@@ -122,13 +122,14 @@ sudo systemctl daemon-reload
 </details>
 
 <details>
-<summary><strong>Create a new system service with a script. The script content is:</strong></summary>
+<summary><strong>Create a new system service with a script. The script content is:</strong>
 
 <em>echo "My app Started" | systemd-cat -t Myapp -p info</em>  
 <em>sleep 5</em>  
 <em>echo "My app crashed" | systemd-cat -t Myapp -p info</em>
 
 Create the custom service in the correct folder. Try rebooting, upgrading, and updating the system.
+</summary>
 
 ```bash
 sudo vim /usr/local/bin/script.sh (paste code here)  
@@ -973,4 +974,5 @@ docker run -d -p 8080:80 --name myserver custom-nginx:1.0
 ```
 
 </details>
+
 
