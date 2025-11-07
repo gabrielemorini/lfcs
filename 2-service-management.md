@@ -531,7 +531,7 @@ cat test.txt
 ```bash
 crontab -l -u user  
 crontab -e -u user  
-* */5 * * *
+*/5 * * * *
 ```
 </details>
 
@@ -971,4 +971,5 @@ COPY index.html /usr/share/nginx/html/index.html
 docker build -t custom-nginx:1.0 -f Dockerfile .
 docker run -d -p 8080:80 --name myserver custom-nginx:1.0
 ```
+
 </details>
